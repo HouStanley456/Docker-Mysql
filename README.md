@@ -1,6 +1,8 @@
 Mysql on Docker
 
 Mysql:8.0.27
+Root password=12345678
+Change password in docker-compose.yml
 
 DockerHub:
 
