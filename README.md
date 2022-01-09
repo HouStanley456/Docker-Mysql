@@ -1,11 +1,14 @@
 Mysql on Docker
 
+---------------------------------------
+
 Mysql:8.0.27
 
 Root password=12345678
 
 Change password in docker-compose.yml
 
+---------------------------------------
 DockerHub:
 
     MySQL - https://hub.docker.com/_/mysql?tab=tags
@@ -43,7 +46,7 @@ step 4:
     
 step 5:
     
-    into image:
+    Enter image:
     docker exec -it  'username_mysql_1' bash -p
     mysql -u root -p -h 127.0.0.1
     password:12345678
