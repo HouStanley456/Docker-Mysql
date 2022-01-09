@@ -1,0 +1,12 @@
+version: "3"
+    services:
+      mysql:
+        build: ./mysql/
+        ports: 
+        - "3306:3306"
+        volumes:
+          - ./mysql/initdb:/docker-entrypoint-initdb.d    #啟動初期數據綁定位置
+          - ./mysql/datadir:/var/lib/mysql                #啟動數據儲存位置指定
+        image: mysql_image                                #指定Docker映像檔名稱
+        enviroment:
+          - MYSQL_ROOT_PASSWORD=12345678                  #Root密碼
