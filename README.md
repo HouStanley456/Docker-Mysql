@@ -44,9 +44,9 @@ step 4:
 step 5:
     
     into image:
-    docker exec -it  'Name' bash -p
+    docker exec -it  'username_mysql_1' bash -p
     mysql -u root -p -h 127.0.0.1
     password:12345678
     
-    
+    #need to change your username
     
