@@ -15,12 +15,26 @@ DockerHub:
 
     MySQL - https://hub.docker.com/_/mysql?tab=tags
 
+step 0:
+
+    sudo apt update
+    sudo apt upgrade
+    sudo apt auto remove
+    sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+
 step 1:
 Install docker and docker-compose
     
     Docker install:
-    sudo apt-get install docker.io
-    
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - 9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88
+    sudo apt-key fingerprint 0EBFCD88
+    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+    sudo apt update
+    sudo apt upgrade
+    apt show docker-ce
+    sudo apt install docker-ce docker-ce-cli containerd.io
+    docker version
+     
     Docker-compose install:
     sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose
