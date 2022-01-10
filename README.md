@@ -33,7 +33,8 @@ Install docker and docker-compose
     sudo apt upgrade
     apt show docker-ce
     sudo apt install docker-ce docker-ce-cli containerd.io
-    docker version
+    sudo systemctl start docker
+    sudo systemctl enable docker
      
     Docker-compose install:
     sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
