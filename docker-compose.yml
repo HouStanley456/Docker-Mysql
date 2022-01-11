@@ -8,5 +8,5 @@ services:
        - ./mysql/initdb:/docker-entrypoint-initdb.d    #啟動初期數據綁定位置
        - ./mysql/datadir:/var/lib/mysql                #啟動數據儲存位置指定
     image: mysql_image                                #指定Docker映像檔名稱
-    enviroment:
+    environment:
        - MYSQL_ROOT_PASSWORD=12345678                  #Root密碼
