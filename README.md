@@ -39,7 +39,7 @@ Install docker and docker-compose
     
 step 2:
     
-    docker pull mysql:8.0.27
+    #docker pull mysql:8.0.27
 
 step 3:
     
