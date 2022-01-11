@@ -37,23 +37,20 @@ Install docker and docker-compose
     sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose
     
-step 2:
-    
-    #docker pull mysql:8.0.27
 
-step 3:
+step 2:
     
     sudo apt-get install git-all
     git clone https://github.com/HouStanley456/Docker-Mysql.git
     
-step 4:
+step 3:
     
     sudo docker-compose build
     sudo docker-compose up -d
     sudo docker-compose ps
     sudo docker-compose run mysql ls
     
-step 5:
+step 4:
     
     Enter image:
     docker exec -it  'username_mysql_1' bash -p
