@@ -1,5 +1,5 @@
 create database healthrobot;
-create table healthinfo(
+create table healthrobot.healthinfo(
 watch_messageid char (255) NOT NULL PRIMARY KEY,
 lineid char (255) NULL,
 recordtime TIMESTAMP NULL,
@@ -13,7 +13,7 @@ bs DECIMAL(3,1) NULL,
 os DECIMAL(3,1) NULL
 );
 
-create table user(
+create table healthrobot.user(
 lineid char (255) NOT NULL PRIMARY KEY,
 usernamer char(255) null,
 twname char(255) null,
@@ -23,7 +23,7 @@ mail char(255) null,
 birthdate date null
 );
 
-create table chat_log(
+create table healthrobot.chat_log(
 lineid varchar (255) NULL,
 messageid varchar(255) NOT NULL PRIMARY KEY,
 recordtime TIMESTAMP NULL,
