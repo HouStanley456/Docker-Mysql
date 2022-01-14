@@ -17,7 +17,7 @@ DockerHub:
 
 #Docker安裝
 
-    # 系统更新
+    # 系統更新
      sudo apt update
      sudo apt upgrade
      sudo apt autoremove
@@ -35,10 +35,10 @@ DockerHub:
     
      9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88
     
-    # key确认
+    # key確認
      apt-key list
      
-    # 最後8位作為fingerprint参數
+    # 最後8位作為fingerprint參數
      sudo apt-key fingerprint 0EBFCD88
      
     # 將Docker訊息庫加入本地訊息庫端
