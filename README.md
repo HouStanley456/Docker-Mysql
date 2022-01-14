@@ -30,7 +30,8 @@ DockerHub:
         software-properties-common
     # 加入Docker訊息庫密鑰
      curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-    9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88
+    
+     9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88
     # key确认
      apt-key list
     # 最後8位作為fingerprint参數
